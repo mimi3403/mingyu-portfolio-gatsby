@@ -1,0 +1,26 @@
+[
+  {
+    "title": "League of Legends",
+    "description": "A simple web application that shows League of Legends champions and champion information. New gamers can visit this app and look for the champions that they want to learn more about.",
+    "technologies": "HTML5, CSS3, Javascript, jQuery, and LOL API (Unofficial)",
+    "githubLink": "https://github.com/mimi3403/League-of-Legends",
+    "deployedLink": "https://mimi3403.github.io/League-of-Legends/",
+    "image": "/images/LOL.png"
+  },
+  {
+    "title": "Baby-Registry",
+    "description": "It is overwhelming for new parents to shop for their little one. This is a baby registry web application that shows the most popular baby products of each category. So parents do not need to do the work themselves, we've done it for them.",
+    "technologies": "HTML5, CSS3, Javascript, RESTful Routing, Express.js, Node.js, MongoDB, and Mongoose Atlas.",
+    "githubLink": "https://github.com/mimi3403/Baby-Registry",
+    "deployedLink": "https://hello-harper.herokuapp.com/",
+    "image": "images/Hello-Harper.png"
+  },
+  {
+    "title": "Kelly's Nail Salon",
+    "description": "This is a Nail Salon website inspired by my mother. I wanted to create a website for her nail salon to show her artwork, services, and help customers to make appointment online. This app features full CRUD, authorization, and authentication. ",
+    "technologies": "HTML5, CSS3, React.js, Express.js, Node.js, MongoDB, Mongoose, Bootstrap, and Google Firebase.",
+    "githubLink": "https://github.com/mimi3403/Kelly-s-Nail-Salon-Frontend",
+    "deployedLink": "https://kelly-nail-salon.netlify.app/",
+    "image": "images/Nail-Salon.png"
+  }
+]

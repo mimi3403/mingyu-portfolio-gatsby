@@ -18,7 +18,7 @@ const SocialMediaInfo = () => {
           <li>
             <a
               href="https://www.linkedin.com/in/mingyu-hong/"
-              target="_blank"
+              target="blank"
               rel="noreferrer"
             >
               <FaLinkedin />
@@ -27,7 +27,7 @@ const SocialMediaInfo = () => {
           <li>
             <a
               href="https://www.instagram.com/mingyuxx/"
-              target="_blank"
+              target="blank"
               rel="noreferrer"
             >
               <FaInstagram />
