@@ -1,5 +1,9 @@
 import React from "react";
-// import { FontAwesomeIcon } from "@fontawesome/react-fontawesome";
+import { FaLinkedin } from "@react-icons/all-files/fa/FaLinkedin";
+import { FaMailBulk } from "@react-icons/all-files/fa/FaMailBulk";
+import { FaInstagram } from "@react-icons/all-files/fa/FaInstagram";
+import { FaFacebookSquare } from "@react-icons/all-files/fa/FaFacebookSquare";
+
 import {
   StyledFooter,
   StyledFooterSocialMedia,
@@ -13,17 +17,27 @@ const Footer = (props) => {
         <nav aria-label="Social-Media">
           <ul>
             <li>
-              {/* <FontAwesomeIcon icon="fa-brands fa-linkedin" /> */}
-              <a>Email</a>
+              <a href="mailto:mingyuhong24@gmail.com">
+                <FaMailBulk />
+              </a>
             </li>
             <li>
-              <a>Linkedin</a>
+              <a
+                href="https://www.linkedin.com/in/mingyu-hong/"
+                target="_blank"
+              >
+                <FaLinkedin />
+              </a>
             </li>
             <li>
-              <a>Instagram</a>
+              <a href="https://www.instagram.com/mingyuxx/" target="_blank">
+                <FaInstagram />
+              </a>
             </li>
             <li>
-              <a>Facebook</a>
+              <a>
+                <FaFacebookSquare />
+              </a>
             </li>
           </ul>
         </nav>

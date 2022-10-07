@@ -1,20 +1,39 @@
 import React from "react";
-import { Fragment } from "react";
+import { Fragment, useState, useEffect } from "react";
 import Layout from "../components/layout";
 import { Link } from "gatsby";
 import {
   StyledViewProject,
   StyledAboutContainer,
+  StyledLoadingAnimation,
 } from "../styles/styled-components";
 
 const IndexPage = () => {
+  const [loading, setLoading] = useState(false);
+
+  useEffect(() => {
+    setLoading(true);
+    setTimeout(() => {
+      setLoading(false);
+    }, 1000);
+  }, []);
+
   return (
     <Fragment>
-      <div className="container">
-        <div className="loader-container">
-          <div className="spinner"></div>
-        </div>
-      </div>
+      {loading && (
+        <StyledLoadingAnimation>
+          <div className="container">
+            <div className="loader-container">
+              <div
+                className="spinner"
+                aria-label="Loading"
+                role="alert"
+                aria-live="assertive"
+              ></div>
+            </div>
+          </div>
+        </StyledLoadingAnimation>
+      )}
       <Layout>
         <h1>HELLO!</h1>
         <h2>I am Mingyu, and I build things for the web</h2>
