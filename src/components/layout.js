@@ -2,16 +2,26 @@ import React from "react";
 import Header from "./header";
 import Footer from "./footer";
 import "../styles/reset.css";
+import { StyledLayout } from "../styles/styled-components";
 
 const Layout = (props) => {
   return (
-    <div>
+    <StyledLayout>
       <Header />
       <div>
-        <main>{props.children}</main>
+        <main
+          style={{
+            backgroundColor: "#0a192f",
+            color: "#fff",
+            // height: "100vh",
+            // width: "100vw",
+          }}
+        >
+          {props.children}
+        </main>
       </div>
       <Footer />
-    </div>
+    </StyledLayout>
   );
 };
 
