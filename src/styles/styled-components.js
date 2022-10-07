@@ -78,15 +78,18 @@ export const StyledLayout = styled.div`
   & > div {
     flex-grow: 1;
   }
+  main {
+    color: #fff;
+  }
 `;
 export const StyledViewProject = styled.div`
   a.view-projects {
     text-decoration: none;
     color: #64ffda;
     border-radius: 3px;
-    border: 2px solid #64ffda;
+    border: 3px solid #64ffda;
     background-color: #0a192f;
-    padding: 14px 28px;
+    padding: 12px 18px;
     font-size: 16px;
     cursor: pointer;
     :hover {
@@ -139,7 +142,7 @@ export const StyledLoadingAnimation = styled.div`
     justify-content: center;
     align-items: center;
     position: fixed;
-    background: #0a192f;
+    background: rgba(73, 86, 112, 0.4);
     z-index: 1;
   }
 

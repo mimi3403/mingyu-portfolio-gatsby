@@ -3,22 +3,29 @@ import Header from "./header";
 import Footer from "./footer";
 import "../styles/reset.css";
 import { StyledLayout } from "../styles/styled-components";
+import { graphql, useStaticQuery } from "gatsby";
 
 const Layout = (props) => {
+  const {
+    site: { siteMetadata },
+  } = useStaticQuery(graphql`
+    query {
+      site {
+        siteMetadata {
+          author
+          description
+          siteUrl
+          title
+        }
+      }
+    }
+  `);
+  console.log(siteMetadata);
   return (
     <StyledLayout>
       <Header />
       <div>
-        <main
-          style={{
-            backgroundColor: "#0a192f",
-            color: "#fff",
-            // height: "100vh",
-            // width: "100vw",
-          }}
-        >
-          {props.children}
-        </main>
+        <main>{props.children}</main>
       </div>
       <Footer />
     </StyledLayout>
