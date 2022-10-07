@@ -15,7 +15,7 @@ const AboutInfo = (props) => {
           experiences. Currently, I am focused on building accessible
           components, and implementing accessibility remediations to ADP's web
           apps using WCAG standards and WAI-ARIA at{" "}
-          <a href="https://www.audioeye.com/" target="_blank">
+          <a href="https://www.audioeye.com/" target="_blank" rel="noreferrer">
             AudioEye.
           </a>
         </p>

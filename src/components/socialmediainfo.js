@@ -11,22 +11,30 @@ const SocialMediaInfo = () => {
       <nav aria-label="Social-Media">
         <ul>
           <li>
-            <a href="mailto:mingyuhong24@gmail.com">
+            <a href="mailto:mingyuhong24@gmail.com ">
               <FaMailBulk />
             </a>
           </li>
           <li>
-            <a href="https://www.linkedin.com/in/mingyu-hong/" target="_blank">
+            <a
+              href="https://www.linkedin.com/in/mingyu-hong/"
+              target="_blank"
+              rel="noreferrer"
+            >
               <FaLinkedin />
             </a>
           </li>
           <li>
-            <a href="https://www.instagram.com/mingyuxx/" target="_blank">
+            <a
+              href="https://www.instagram.com/mingyuxx/"
+              target="_blank"
+              rel="noreferrer"
+            >
               <FaInstagram />
             </a>
           </li>
           <li>
-            <a>
+            <a href="www.facebook.com" target="blank" rel="noreferrer">
               <FaFacebookSquare />
             </a>
           </li>

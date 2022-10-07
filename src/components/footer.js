@@ -8,6 +8,7 @@ const Footer = ({ author, title }) => {
     <StyledFooter>
       <h2>Get In Touch!</h2>
       <SocialMediaInfo />
+      <small>Created by {author}</small>
     </StyledFooter>
   );
 };

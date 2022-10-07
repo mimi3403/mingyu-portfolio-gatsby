@@ -2,6 +2,7 @@ import React from "react";
 import { Fragment, useState, useEffect } from "react";
 import Layout from "../components/layout";
 import AboutInfo from "../components/aboutinfo";
+import Head from "../components/head";
 import { StyledLoadingAnimation } from "../styles/styled-components";
 
 const IndexPage = () => {
@@ -31,6 +32,7 @@ const IndexPage = () => {
         </StyledLoadingAnimation>
       )}
       <Layout>
+        <Head page="Home" />
         <AboutInfo />
       </Layout>
     </Fragment>

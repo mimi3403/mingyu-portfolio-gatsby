@@ -1,12 +1,14 @@
 module.exports = {
   siteMetadata: {
-    title: `mingyu-portfolio`,
+    title: `Mingyu Hong`,
     siteUrl: `https://www.yourdomain.tld`,
     author: "Mingyu Hong",
+    description: "A Personal Website for Mingyu Hong",
   },
   plugins: [
     "gatsby-plugin-styled-components",
     "gatsby-plugin-sitemap",
+    "gatsby-plugin-react-helmet",
     {
       resolve: "gatsby-plugin-manifest",
       options: {
