@@ -182,26 +182,27 @@ export const StyledBurger = styled.button`
 `;
 
 export const StyledNavDrawer = styled.nav`
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  background: #0a192f;
-  transform: ${({ open }) => (open ? "translateX(0)" : "translateX(-100%)")};
-  height: 100vh;
-  text-align: left;
-  padding: 2rem;
-  position: absolute;
-  top: 0;
-  left: 0;
-  transition: transform 0.3s ease-in-out;
-  @media (max-width: 576px) {
-    width: 100%;
+  ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background: #0a192f;
+    transform: ${({ open }) => (open ? "translateX(0)" : "translateX(100%)")};
+    height: 100vh;
+    text-align: left;
+    padding: 2rem;
+    position: absolute;
+    top: 0;
+    right: 0;
+    transition: transform 0.3s ease-in-out;
+    @media (max-width: 576px) {
+      width: 100%;
+    }
   }
-  a,
-  div {
+  li {
     font-size: 2rem;
     text-transform: uppercase;
-    padding: 3rem;
+    padding: 2rem;
     font-weight: bold;
     letter-spacing: 0.5rem;
     color: #64ffda;
@@ -211,7 +212,7 @@ export const StyledNavDrawer = styled.nav`
       font-size: 1.5rem;
       text-align: center;
     }
-    :hover {
+    a :hover {
       color: #5ae5c4;
     }
   }

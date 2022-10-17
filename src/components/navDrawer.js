@@ -5,18 +5,30 @@ import { StyledNavDrawer } from "../styles/styled-components";
 function NavDrawer({ open, setOpen }) {
   return (
     <StyledNavDrawer open={open}>
-      <Link to="/" onClick={() => setOpen(false)}>
-        Home
-      </Link>
-      <Link to="/work" onClick={() => setOpen(false)}>
-        About
-      </Link>
-      <Link to="/projects" onClick={() => setOpen(false)}>
-        Projects
-      </Link>
-      <Link to="/contact" onClick={() => setOpen(false)}>
-        Contact
-      </Link>
+      <>
+        <ul>
+          <li>
+            <Link to="/" onClick={() => setOpen(false)}>
+              Home
+            </Link>
+          </li>
+          <li>
+            <Link to="/work" onClick={() => setOpen(false)}>
+              Work
+            </Link>
+          </li>
+          <li>
+            <Link to="/projects" onClick={() => setOpen(false)}>
+              Projects
+            </Link>
+          </li>
+          <li>
+            <Link to="/contact" onClick={() => setOpen(false)}>
+              Contact
+            </Link>
+          </li>
+        </ul>
+      </>
     </StyledNavDrawer>
   );
 }
