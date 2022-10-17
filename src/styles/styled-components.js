@@ -182,6 +182,22 @@ export const StyledBurger = styled.button`
 `;
 
 export const StyledNavDrawer = styled.nav`
+  div.drawer-block {
+    width: 100vw;
+    background-color: rgba(10, 25, 47, 0.3);
+    opacity: ${({ open }) => (open ? "1" : "0")};
+    height: 100vh;
+    text-align: left;
+    padding: 2rem;
+    position: absolute;
+    top: 0;
+    right: 0;
+    transition: all 0.3s ease-in-out;
+    backdrop-filter: blur(3px);
+    @media (max-width: 576px) {
+      width: 100%;
+    }
+  }
   ul {
     display: flex;
     flex-direction: column;

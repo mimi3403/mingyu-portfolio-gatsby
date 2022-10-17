@@ -5,7 +5,7 @@ import { StyledNavDrawer } from "../styles/styled-components";
 function NavDrawer({ open, setOpen }) {
   return (
     <StyledNavDrawer open={open}>
-      <>
+      <div className="drawer-block">
         <ul>
           <li>
             <Link to="/" onClick={() => setOpen(false)}>
@@ -28,7 +28,7 @@ function NavDrawer({ open, setOpen }) {
             </Link>
           </li>
         </ul>
-      </>
+      </div>
     </StyledNavDrawer>
   );
 }
