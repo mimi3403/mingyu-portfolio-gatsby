@@ -11,8 +11,12 @@ const SocialMediaInfo = () => {
       <nav aria-label="Social-Media">
         <ul>
           <li>
-            <a href="mailto:mingyuhong24@gmail.com ">
-              <FaMailBulk />
+            <a href="mailto:mingyuhong24@gmail.com " aria-label="Email">
+              <FaMailBulk
+                aria-hidden="true"
+                role="presentation"
+                tabindex="-1"
+              />
             </a>
           </li>
           <li>
@@ -20,8 +24,13 @@ const SocialMediaInfo = () => {
               href="https://www.linkedin.com/in/mingyu-hong/"
               target="blank"
               rel="noreferrer"
+              aria-label="Linkedin"
             >
-              <FaLinkedin />
+              <FaLinkedin
+                aria-hidden="true"
+                role="presentation"
+                tabindex="-1"
+              />
             </a>
           </li>
           <li>
@@ -29,13 +38,27 @@ const SocialMediaInfo = () => {
               href="https://www.instagram.com/mingyuxx/"
               target="blank"
               rel="noreferrer"
+              aria-label="Instagram"
             >
-              <FaInstagram />
+              <FaInstagram
+                aria-hidden="true"
+                role="presentation"
+                tabindex="-1"
+              />
             </a>
           </li>
           <li>
-            <a href="www.facebook.com" target="blank" rel="noreferrer">
-              <FaFacebookSquare />
+            <a
+              href="www.facebook.com"
+              target="blank"
+              rel="noreferrer"
+              aria-label="Facebook"
+            >
+              <FaFacebookSquare
+                aria-hidden="true"
+                role="presentation"
+                tabindex="-1"
+              />
             </a>
           </li>
         </ul>

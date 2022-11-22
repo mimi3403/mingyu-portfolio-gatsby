@@ -126,10 +126,24 @@ export const StyledFooterSocialMedia = styled.div`
         color: #64ffda;
         text-decoration: none;
         cursor: pointer;
-        :hover {
-          color: #5ae5c4;
-        }
       }
+    }
+  }
+  svg {
+    font-size: 20px;
+    box-shadow: 2px 2px 2px #000000, 10px 10px 12px #000000,
+      inset 2px 2px 2px 10px #000000 inset 2px 2px 2px 10px #000000 inset 2px
+        2px 2px 10px #000000 inset 2px 2px 2px 10px #000000;
+    text-shadow: 0px 0px 16px #0072ff, 0px 0px 8px #0072ff, 0px 0px 8px #0072ff,
+      0px 0px 8px #0072ff;
+    animation: animate 3s linear infinite;
+  }
+  @keyframes animate {
+    from {
+      filter: hue-rotate(0deg);
+    }
+    to {
+      filter: hue-rotate(360deg);
     }
   }
 `;
@@ -194,8 +208,9 @@ export const StyledNavDrawer = styled.nav`
     right: 0;
     transition: all 0.3s ease-in-out;
     backdrop-filter: blur(3px);
-    @media (max-width: 576px) {
+    @media (max-width: 1065px) {
       width: 100%;
+      overflow-x: hidden;
     }
   }
   ul {
@@ -213,6 +228,7 @@ export const StyledNavDrawer = styled.nav`
     transition: transform 0.3s ease-in-out;
     @media (max-width: 576px) {
       width: 100%;
+      overflow-x: hidden;
     }
   }
   li {
@@ -227,6 +243,7 @@ export const StyledNavDrawer = styled.nav`
     @media (max-width: 576px) {
       font-size: 1.5rem;
       text-align: center;
+      overflow-x: hidden;
     }
     a :hover {
       color: #5ae5c4;
@@ -262,5 +279,13 @@ export const StyledLoadingAnimation = styled.div`
     100% {
       transform: rotate(360deg);
     }
+  }
+`;
+
+export const StyledProjectSection = styled.section`
+  a {
+    color: #64ffda;
+    text-decoration: none;
+    display: block;
   }
 `;

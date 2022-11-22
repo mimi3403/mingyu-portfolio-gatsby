@@ -3,14 +3,15 @@ import Layout from "../components/layout";
 import Head from "../components/head";
 import data from "../data/projects.json";
 import { FaGithubSquare } from "@react-icons/all-files/fa/FaGithubSquare";
+import { StyledProjectSection } from "../styles/styled-components";
 
 const Projects = (props) => {
   console.log(data);
   return (
     <Layout>
       <Head page="Projects" />
-      <h1>Projects</h1>
-      <section>
+      <h1>Some Things I’ve Built</h1>
+      <StyledProjectSection>
         {data.map((project, idx) => (
           <article key={idx}>
             <h2>{project.title}</h2>
@@ -24,7 +25,7 @@ const Projects = (props) => {
             <img src={project.image} alt="" />
           </article>
         ))}
-      </section>
+      </StyledProjectSection>
     </Layout>
   );
 };
