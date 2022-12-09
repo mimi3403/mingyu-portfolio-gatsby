@@ -27,8 +27,12 @@ const Header = (props) => {
     }
   };
 
+  const handleClick = (event) => {
+    console.log(event);
+  };
+
   return (
-    <StyledHeader>
+    <StyledHeader handleClick={handleClick}>
       <h1>
         <Link to="/">
           <img
@@ -44,7 +48,9 @@ const Header = (props) => {
               <Link to="/">01. Home</Link>
             </li>
             <li>
-              <Link to="/projects">02. Projects</Link>
+              <a href="#projects" onClick={handleClick}>
+                02. Projects
+              </a>
             </li>
             <li>
               <Link to="/work">03. Work</Link>

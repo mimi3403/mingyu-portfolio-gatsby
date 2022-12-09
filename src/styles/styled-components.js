@@ -8,7 +8,7 @@ export const StyledHeader = styled.header`
   color: #fff;
   height: 5rem;
   padding: 0 1rem;
-  box-shadow: 1px 1px 3px 1px #808080;
+  box-shadow: 1px 1px 1px 1px #222f43;
   a {
     text-decoration: none;
     color: inherit;
@@ -58,6 +58,7 @@ export const StyledFooter = styled.footer`
   background-color: #0a192f;
   color: #fff;
   height: 5rem;
+  margin-bottom: 20px;
   p {
     margin: 0;
   }
@@ -99,6 +100,16 @@ export const StyledViewProject = styled.div`
 `;
 
 export const StyledAboutContainer = styled.div`
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: flex-start;
+  margin: 10px;
+  /* padding: 10px 500px; */
+
+  h1 {
+    font-size: 60px;
+  }
   a {
     display: inline;
     color: #64ffda;
@@ -106,6 +117,9 @@ export const StyledAboutContainer = styled.div`
     :hover {
       text-decoration: underline;
     }
+  }
+  div.btn-container {
+    margin-top: 40px;
   }
 `;
 
@@ -251,41 +265,152 @@ export const StyledNavDrawer = styled.nav`
   }
 `;
 
-export const StyledLoadingAnimation = styled.div`
-  .loader-container {
-    width: 100%;
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: fixed;
-    background: rgba(73, 86, 112, 0.4);
-    z-index: 1;
-  }
+// export const StyledLoadingAnimation = styled.div`
+//   .loader-container {
+//     width: 100%;
+//     height: 100vh;
+//     display: flex;
+//     justify-content: center;
+//     align-items: center;
+//     position: fixed;
+//     background: rgba(73, 86, 112, 0.4);
+//     z-index: 1;
+//   }
 
-  .spinner {
-    width: 64px;
-    height: 64px;
-    border: 8px solid;
-    border-color: #5ae5c4 transparent #5ae5c4 transparent;
-    border-radius: 50%;
-    animation: spin-anim 1.2s linear infinite;
-  }
+//   .spinner {
+//     width: 64px;
+//     height: 64px;
+//     border: 8px solid;
+//     border-color: #5ae5c4 transparent #5ae5c4 transparent;
+//     border-radius: 50%;
+//     animation: spin-anim 1.2s linear infinite;
+//   }
 
-  @keyframes spin-anim {
-    0% {
-      transform: rotate(0deg);
-    }
-    100% {
-      transform: rotate(360deg);
-    }
-  }
-`;
+//   @keyframes spin-anim {
+//     0% {
+//       transform: rotate(0deg);
+//     }
+//     100% {
+//       transform: rotate(360deg);
+//     }
+//   }
+// `;
 
 export const StyledProjectSection = styled.section`
+  /* padding: 10px 500px; */
+  article {
+    display: grid;
+    grid-template-columns: 5fr 3fr;
+    margin-bottom: 50px;
+  }
+  h3 {
+    color: #64ffda;
+  }
   a {
     color: #64ffda;
     text-decoration: none;
+    display: inline;
+    padding: 5px;
+  }
+  .project-img {
+    padding-left: 30px;
+  }
+  img {
+    object-fit: cover;
+    opacity: 1;
+    border-radius: 3px;
+    width: 300px;
+    height: 200px;
+  }
+  h2.numbered-heading {
+    display: flex;
+    align-items: center;
+  }
+  h2.numbered-heading::after {
+    content: "";
     display: block;
+    position: relative;
+    width: 300px;
+    height: 1px;
+    margin-left: 20px;
+    background-color: rgba(204, 204, 204, 0.3);
+  }
+`;
+
+export const StyledAboutMe = styled.div`
+  /* padding-left: 500px; */
+  padding-top: 40px;
+  padding-bottom: 50px;
+  h2.numbered-heading {
+    display: flex;
+    align-items: center;
+  }
+  h2.numbered-heading::after {
+    content: "";
+    display: block;
+    position: relative;
+    width: 300px;
+    height: 1px;
+    margin-left: 20px;
+    background-color: rgba(204, 204, 204, 0.3);
+  }
+  ul.skills-list {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(140px, 200px));
+    gap: 0px 10px;
+    padding: 0;
+    margin: 20px 0px 0px;
+    overflow: hidden;
+    list-style: none;
+  }
+  ul.skills-list li {
+    position: relative;
+    margin-bottom: 8px;
+    padding-left: 18px;
+    font-size: small;
+  }
+  ul.skills-list li::before {
+    content: "▹";
+    position: absolute;
+    left: 0px;
+    top: 4px;
+    color: #64ffda;
+    font-size: small;
+    line-height: 12px;
+  }
+  .inner {
+    display: grid;
+    grid-template-columns: 3fr 2fr;
+    gap: 50px;
+  }
+`;
+
+export const StyledProfileImgContainer = styled.div`
+  position: relative;
+  max-width: 300px;
+  .wrapper {
+    display: block;
+    position: relative;
+    width: 100%;
+  }
+
+  .wrapper::after {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border: 2px solid #64ffda;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    z-index: -1;
+  }
+  img {
+    object-fit: cover;
+    opacity: 1;
+    border-radius: 3px;
+    width: 200px;
+    height: 200px;
   }
 `;

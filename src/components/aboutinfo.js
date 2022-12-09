@@ -1,4 +1,4 @@
-import React from "react";
+import React, { Fragment } from "react";
 import { Link } from "gatsby";
 import {
   StyledViewProject,
@@ -6,10 +6,10 @@ import {
 } from "../styles/styled-components";
 const AboutInfo = (props) => {
   return (
-    <div>
-      <h1>HELLO!</h1>
-      <h2>I am Mingyu, and I build things for the web</h2>
+    <Fragment>
       <StyledAboutContainer>
+        <h1>HELLO!</h1>
+        <h2>My name is Mingyu, and I build things for the web</h2>
         <p>
           I am a software engineer specializing in building exceptional digital
           experiences. Currently, I am focused on building accessible
@@ -19,13 +19,13 @@ const AboutInfo = (props) => {
             AudioEye.
           </a>
         </p>
+        <StyledViewProject className="btn-container">
+          <Link className="view-projects" to="/projects">
+            Check out my projects!
+          </Link>
+        </StyledViewProject>
       </StyledAboutContainer>
-      <StyledViewProject>
-        <Link className="view-projects" to="/projects">
-          Check out my projects!
-        </Link>
-      </StyledViewProject>
-    </div>
+    </Fragment>
   );
 };
 
