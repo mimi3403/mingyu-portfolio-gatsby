@@ -103,9 +103,9 @@ export const StyledAboutContainer = styled.div`
   display: flex;
   justify-content: center;
   flex-direction: column;
-  align-items: flex-start;
+  align-items: center;
   margin: 10px;
-  /* padding: 10px 500px; */
+  text-align: inherit;
 
   h1 {
     font-size: 60px;
@@ -118,8 +118,21 @@ export const StyledAboutContainer = styled.div`
       text-decoration: underline;
     }
   }
-  div.btn-container {
-    margin-top: 40px;
+  a.view-projects {
+    text-decoration: none;
+    color: #64ffda;
+    border-radius: 3px;
+    border: 3px solid #64ffda;
+    background-color: #0a192f;
+    padding: 12px 18px;
+    font-size: 16px;
+    cursor: pointer;
+    :hover {
+      background-color: #495670;
+    }
+  }
+  .btn-container {
+    margin-top: 60px;
   }
 `;
 
@@ -297,12 +310,15 @@ export const StyledNavDrawer = styled.nav`
 // `;
 
 export const StyledProjectSection = styled.section`
-  /* padding: 10px 500px; */
-  article {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  /* article {
     display: grid;
-    grid-template-columns: 5fr 3fr;
+    grid-template-columns: 6fr 3fr;
     margin-bottom: 50px;
-  }
+  } */
   h3 {
     color: #64ffda;
   }
@@ -338,12 +354,17 @@ export const StyledProjectSection = styled.section`
 `;
 
 export const StyledAboutMe = styled.div`
-  /* padding-left: 500px; */
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
   padding-top: 40px;
   padding-bottom: 50px;
+
   h2.numbered-heading {
     display: flex;
     align-items: center;
+    /* margin-right: 16rem; */
   }
   h2.numbered-heading::after {
     content: "";
@@ -378,11 +399,11 @@ export const StyledAboutMe = styled.div`
     font-size: small;
     line-height: 12px;
   }
-  .inner {
+  /* .inner {
     display: grid;
     grid-template-columns: 3fr 2fr;
     gap: 50px;
-  }
+  } */
 `;
 
 export const StyledProfileImgContainer = styled.div`

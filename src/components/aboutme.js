@@ -5,8 +5,8 @@ const AboutMe = () => {
   return (
     <Fragment>
       <StyledAboutMe id="about">
-        <h2 className="numbered-heading">About Me</h2>
         <div className="inner">
+          <h2 className="numbered-heading">About Me</h2>
           <div className="about-container">
             <p>
               Hi! My name is Mingyu, and I am a full-stack developer with
